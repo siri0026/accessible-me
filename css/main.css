@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: white; /* Improves contrast for improved readability and accessibility */
   margin: 0;
   padding: 0;
 }
