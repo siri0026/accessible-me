@@ -13,10 +13,15 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="top"> <!-- Adds ID for skiplink -->
+    <!-- Skip links -->
+    <ul class="skip-links">
+      <li><a href="nav">Skip to main nav</a></li>
+      <li><a href="main">Skip to main content</a></li>
+    </ul>
     <header class="site-header" role="banner"> <!-- Semantic and ARIA -->
       <h1 role="heading">Jam Box Studios</h1> <!-- Adds ARIA role to main heading -->
-      <nav class="main-nav" role="navigation"> <!-- Adds ARIA landmark role and Semantic -->
+      <nav class="main-nav" role="navigation" id="nav"> <!-- Changes div to nav, adds ARIA role and ID for skiplink -->
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -26,7 +31,7 @@
       </nav>
       <img src="https://placekitten.com/1200/900" class="banner">
     </header>
-    <main class="main-content" role="main"> <!-- Changes div to main, adds ARIA role -->
+    <main class="main-content" role="main" id="main"> <!-- Changes div to nav, adds ARIA role and ID for skiplink -->
       <h2>Welcome to Jam Box</h2> <!-- Changes h1 to h2 -->
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
@@ -62,7 +67,7 @@
       </section>
     </main>
     <footer class="site-footer" role="contentinfo"> <!-- Changes div to footer, adds ARIA role -->
-      &copy; 2021 Jam Box Studios
+      &copy; 2021 Jam Box Studios <a href="#top">Back to Top</a> <!-- Adds Back to top skiplink -->
     </footer>
   </div>
 </body>
