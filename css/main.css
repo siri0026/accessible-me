@@ -52,6 +52,12 @@ form textarea {
   padding: .5rem 1rem;
 }
 
+/* Adds space between label and input */
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
 form textarea {
   min-height: 150px;
   max-height: 150px;
@@ -68,4 +74,23 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+}
+
+/* Hides skip links bt default, shows on focus */
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a{
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+
+.skip-links a:focus{
+  top: 0;
 }
